@@ -1,6 +1,6 @@
-package com.atguigu.fruit.dao;
+package com.chen.fruit.dao;
 
-import com.atguigu.fruit.pojo.Fruit;
+import com.chen.fruit.pojo.Fruit;
 
 import java.util.List;
 

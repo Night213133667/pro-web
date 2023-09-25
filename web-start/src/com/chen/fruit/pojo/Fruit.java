@@ -1,4 +1,4 @@
-package com.atguigu.fruit.pojo;
+package com.chen.fruit.pojo;
 
 public class Fruit {
     private Integer fid ;

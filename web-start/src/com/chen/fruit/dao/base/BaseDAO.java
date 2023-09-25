@@ -1,4 +1,4 @@
-package com.atguigu.fruit.dao.base;
+package com.chen.fruit.dao.base;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class BaseDAO<T> {
-    public final String DRIVER = "com.mysql.jdbc.Driver" ;
-    public final String URL = "jdbc:mysql://localhost:3306/fruitdb?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+    public final String DRIVER = "com.mysql.cj.jdbc.Driver" ;
+    public final String URL = "jdbc:mysql://localhost:3306/fruitdb?rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai&characterEncoding=UTF-8";
     public final String USER = "root";
-    public final String PWD = "123456" ;
+    public final String PWD = "chenlong" ;
 
     protected Connection conn ;
     protected PreparedStatement psmt ;

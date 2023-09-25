@@ -1,7 +1,5 @@
 package com.chen.servlets;
 
-import org.junit.Test;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -9,27 +7,19 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * ClassName: test
+ * ClassName: Demo05Servlet
  * Package: com.chen.servlets
  * Description:
- *
+ *      演示从HTTPServlet保存作用域中获取数据
  * @Author: Night
- * @Create: 2023/9/23 - 17:21
+ * @Create: 2023/9/24 - 21:25
  * @Version: 1.0
  */
-public class test extends HttpServlet {
-    @Override
-    public void init() throws ServletException {
-        System.out.println("正在初始化.....");
-    }
-
+public class Demo05Servlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("正在服务.....");
-    }
+        Object uname = req.getSession().getAttribute("uname");
+        System.out.println(uname);
 
-    @Override
-    public void destroy() {
-        System.out.println("正在销毁.....");
     }
 }

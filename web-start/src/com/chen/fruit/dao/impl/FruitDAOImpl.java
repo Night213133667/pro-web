@@ -1,8 +1,8 @@
-package com.atguigu.fruit.dao.impl;
+package com.chen.fruit.dao.impl;
 
-import com.atguigu.fruit.dao.FruitDAO;
-import com.atguigu.fruit.dao.base.BaseDAO;
-import com.atguigu.fruit.pojo.Fruit;
+import com.chen.fruit.dao.FruitDAO;
+import com.chen.fruit.dao.base.BaseDAO;
+import com.chen.fruit.pojo.Fruit;
 
 import java.util.List;
 

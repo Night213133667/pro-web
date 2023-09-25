@@ -1,8 +1,9 @@
-package com.atguigu.servlets;
+package com.chen.servlets;
 
-import com.atguigu.fruit.dao.FruitDAO;
-import com.atguigu.fruit.dao.impl.FruitDAOImpl;
-import com.atguigu.fruit.pojo.Fruit;
+
+import com.chen.fruit.dao.FruitDAO;
+import com.chen.fruit.dao.impl.FruitDAOImpl;
+import com.chen.fruit.pojo.Fruit;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +14,7 @@ import java.io.IOException;
 public class AddServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
 
         String fname = request.getParameter("fname");
         String priceStr = request.getParameter("price");
