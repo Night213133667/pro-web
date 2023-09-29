@@ -2,32 +2,61 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web-start:Web exploded" />
+      <artifact name="web-fruit-thymeleaf:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="102f4ebb-1565-4d9a-8d2d-c0fd20009a85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web-start/src/com/chen/servlets/Demo03Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-start/src/com/chen/servlets/Demo04Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-start/src/com/chen/servlets/Demo05Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-start/src/com/chen/servlets/Demo06Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-start/src/com/chen/servlets/Demo07Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_start_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_start_Web_exploded.xml" afterDir="false" />
+    <list default="true" id="102f4ebb-1565-4d9a-8d2d-c0fd20009a85" name="Changes" comment="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib_thymeleaf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/attoparser-2.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/javassist-3.20.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/log4j-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/ognl-3.1.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/slf4j-log4j12-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/thymeleaf-3.0.12.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_thymeleaf/unbescape-1.1.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/demo/Demo01Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/demo/Demo02Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/demo/Demo03Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/demo/Demo04Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/demo/Demo05Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/demo/Demo06Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/demo/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/dao/FruitDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/pojo/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/servlets/AddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/servlets/DelServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/servlets/EditServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/servlets/IndexServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/fruit/servlets/UpdateServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/myssm/basedao/BaseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/myssm/myspringmvc/ViewBaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/src/com/chen/myssm/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web-fruit-thymeleaf.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/css/add.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/css/edit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/css/fruit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/imgs/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-fruit-thymeleaf/web/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_start_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_fruit_thymeleaf_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pro-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pro-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/src/com/chen/fruit/dao/FruitDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/src/com/chen/fruit/dao/FruitDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/src/com/chen/fruit/dao/base/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/src/com/chen/fruit/dao/base/BaseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/src/com/chen/fruit/pojo/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/src/com/chen/fruit/pojo/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/src/com/chen/servlets/AddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/src/com/chen/servlets/AddServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/src/com/chen/servlets/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/src/com/chen/servlets/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/web-start.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/web-start.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-start/web/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-start/web/add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +66,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -62,54 +92,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8.0_271",
-    "last_opened_file_path": "D:/Code/JAVA/pro-web/web-start/src/com/chen/servlets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15429688",
-    "project.structure.side.proportion": "0.22675025",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8.0_271&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/JAVA/pro-web/web-fruit-thymeleaf/web/css&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22675025&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\JAVA\pro-web\web-fruit-thymeleaf\web\css" />
+      <recent name="D:\Code\JAVA\pro-web\web-fruit-thymeleaf\web" />
+      <recent name="D:\Code\JAVA\pro-web\lib_thymeleaf" />
       <recent name="D:\Code\JAVA\pro-web\web-start\src\com\chen\servlets" />
       <recent name="D:\Code\JAVA\pro-web\web-start\src\com\chen" />
-      <recent name="D:\Code\JAVA\pro-web\web-start\web" />
-      <recent name="D:\Code\JAVA\pro-web\lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.chen.demo" />
+      <recent name="com.chen.myssm.basedao" />
+      <recent name="com.chen.pojo" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 8.0.42" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.42" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/add.html" />
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.42">
+    <configuration name="test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web-fruit-thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chen.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chen.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.chen.demo.test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.0.42" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.42" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="web-start:Web exploded">
+        <artifact name="web-fruit-thymeleaf:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="d973ba18-bd40-4b43-afe2-b3a9b666febb" />
+        <option name="BASE_DIRECTORY_NAME" value="7964f885-6bc9-4758-89bb-e948a9f051e5" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -117,7 +169,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="13647" />
+        <option name="DEBUG_PORT" value="14908" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -182,10 +234,16 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web-start:Web exploded" />
+          <artifact name="web-fruit-thymeleaf:war exploded" />
+          <artifact name="web-fruit-thymeleaf:war exploded" />
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -195,8 +253,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695458205819</updated>
-      <workItem from="1695458207464" duration="14180000" />
+      <workItem from="1695458207464" duration="22833000" />
+      <workItem from="1695662151934" duration="2553000" />
+      <workItem from="1695713061293" duration="3451000" />
+      <workItem from="1695747355969" duration="3375000" />
+      <workItem from="1695780976560" duration="11634000" />
+      <workItem from="1695887121017" duration="19033000" />
+      <workItem from="1695947884384" duration="8171000" />
     </task>
+    <task id="LOCAL-00001" summary="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向">
+      <created>1695636081174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695636081174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,5 +276,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向" />
   </component>
 </project>
