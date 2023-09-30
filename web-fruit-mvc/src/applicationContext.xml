@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans>
+    <!-- 这个bean标签的作用是 servletPath中涉及的名字对应的是fruit，那么就由与之对应的FruitController类来处理 -->
+    <bean id="fruit" class="com.chen.fruit.controllers.FruitController" />
+
+</beans>

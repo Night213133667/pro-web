@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pro-web.iml" filepath="$PROJECT_DIR$/pro-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-fruit-mvc/web-fruit-mvc.iml" filepath="$PROJECT_DIR$/web-fruit-mvc/web-fruit-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-fruit-thymeleaf/web-fruit-thymeleaf.iml" filepath="$PROJECT_DIR$/web-fruit-thymeleaf/web-fruit-thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-start/web-start.iml" filepath="$PROJECT_DIR$/web-start/web-start.iml" />
     </modules>

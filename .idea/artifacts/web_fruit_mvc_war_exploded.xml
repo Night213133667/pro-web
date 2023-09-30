@@ -1,17 +1,18 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="web-fruit-thymeleaf:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/web_fruit_thymeleaf_war_exploded</output-path>
+  <artifact type="exploded-war" name="web-fruit-mvc:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_fruit_mvc_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="web-fruit-thymeleaf" />
+          <element id="module-output" name="web-fruit-mvc" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib" />
           <element id="library" level="project" name="lib_thymeleaf" />
+          <element id="library" level="module" name="JUnit4" module-name="web-fruit-mvc" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="web-fruit-thymeleaf/web/Web" />
+      <element id="javaee-facet-resources" facet="web-fruit-mvc/web/Web" />
     </root>
   </artifact>
 </component>
