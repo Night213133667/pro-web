@@ -1,4 +1,4 @@
-package com.chen.myssm.io;
+package com.chen.myssm.ioc;
 
 /**
  * ClassName: BeanFactory

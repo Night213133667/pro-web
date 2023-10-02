@@ -3,6 +3,7 @@ package com.chen.fruit.service.impl;
 import com.chen.fruit.service.FruitService;
 import com.chen.fruit.dao.FruitDAO;
 import com.chen.fruit.pojo.Fruit;
+import com.chen.myssm.util.ConnUtil;
 
 import java.util.List;
 
@@ -40,6 +41,7 @@ public class FruitServiceImpl implements FruitService {
 
     @Override
     public Integer getPageCount(String keyword) {
+        System.out.println(ConnUtil.getConn());
         int count = fruitDAO.getFruitCount(keyword);
         return (count +5 - 1) / 5;
     }

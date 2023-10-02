@@ -17,6 +17,7 @@ import java.util.List;
  */
 public class FruitDAOImpl extends BaseDAO<Fruit> implements FruitDAO {
 
+
     @Override
     public List<Fruit> getFruitList(String keyword, Integer pageNum) {
         return super.executeQuery("SELECT * FROM t_fruit WHERE fname like ? OR remark like ? LIMIT ?,5"

@@ -1,5 +1,7 @@
 package com.chen.myssm.basedao;
 
+import com.chen.myssm.util.ConnUtil;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -34,35 +36,16 @@ public abstract class BaseDAO<T> {
             entityClass = Class.forName(actualType.getTypeName());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            throw new DAOException("BaseDAO 加载驱动出现异常");
         }
     }
 
     protected Connection getConn(){
-        try {
-            //1.加载驱动
-            Class.forName(DRIVER);
-            //2.通过驱动管理器获取连接对象
-            return DriverManager.getConnection(URL, USER, PWD);
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
-        }
-        return null ;
+        return ConnUtil.getConn();
     }
 
     protected void close(ResultSet rs , PreparedStatement psmt , Connection conn){
-        try {
-            if (rs != null) {
-                rs.close();
-            }
-            if(psmt!=null){
-                psmt.close();
-            }
-            if(conn!=null && !conn.isClosed()){
-                conn.close();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
     }
 
     //给预处理命令对象设置参数
@@ -97,10 +80,10 @@ public abstract class BaseDAO<T> {
             return count ;
         } catch (SQLException e) {
             e.printStackTrace();
+            throw new RuntimeException("BaseDAO executeUpdate出现异常");
         }finally {
             close(rs,psmt,conn);
         }
-        return 0;
     }
 
     //通过反射技术给obj对象的property属性赋propertyValue值
@@ -115,6 +98,7 @@ public abstract class BaseDAO<T> {
             }
         } catch (NoSuchFieldException | IllegalAccessException e) {
             e.printStackTrace();
+            throw new DAOException("DAO Base setValue出现异常");
         }
     }
 
@@ -143,6 +127,7 @@ public abstract class BaseDAO<T> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            throw new DAOException("DAO Base executeComplexQuery出现异常");
         } finally {
             close(rs,psmt,conn);
         }
@@ -174,12 +159,9 @@ public abstract class BaseDAO<T> {
                 }
                 return entity ;
             }
-        } catch (SQLException e) {
+        } catch (SQLException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
+            throw new DAOException("DAO Base load出现异常");
         } finally {
             close(rs,psmt,conn);
         }
@@ -213,12 +195,9 @@ public abstract class BaseDAO<T> {
                 }
                 list.add(entity);
             }
-        } catch (SQLException e) {
+        } catch (SQLException | IllegalAccessException | InstantiationException e) {
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
+            throw new DAOException("DAO Base executeQuery出现异常");
         } finally {
             close(rs,psmt,conn);
         }

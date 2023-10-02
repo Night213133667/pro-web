@@ -9,34 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="102f4ebb-1565-4d9a-8d2d-c0fd20009a85" name="Changes" comment="MVC-Servlet优化">
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/Demo01Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/controllers/FruitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/dao/FruitDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/pojo/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/service/FruitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/service/impl/FruitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/basedao/BaseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/io/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/io/ClassPathXmlApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/ViewBaseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/util/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web-servlet_api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/css/add.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/css/edit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/css/fruit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/imgs/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/web/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_fruit_mvc_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_servlet_api_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="102f4ebb-1565-4d9a-8d2d-c0fd20009a85" name="Changes" comment="1.使用MVC框架&#10;2.IOC控制反转/DI依赖注入">
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/Demo02Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/Demo03Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/Demo04Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Demo01Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Filter01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Filter02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Filter03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/basedao/DAOException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/filters/CharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/filters/OpenSessionInViewFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/listener/ContextLoaderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/DispatcherServletException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/trans/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/util/ConnUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/service/impl/FruitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/service/impl/FruitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/basedao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/basedao/BaseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/io/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/ioc/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/io/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/ioc/ClassPathXmlApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-servlet_api/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,30 +69,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8.0_271",
-    "last_opened_file_path": "D:/Code/JAVA/pro-web/web-servlet_api/web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.16320474",
-    "project.structure.side.proportion": "0.2591716",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8.0_271&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/JAVA/pro-web/web-servlet_api/web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16320474&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2591716&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Code\JAVA\pro-web\web-servlet_api\web" />
@@ -105,8 +102,9 @@
       <recent name="D:\Code\JAVA\pro-web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.chen.myssm.myspringmvc" />
+      <recent name="com.chen.filters" />
       <recent name="com.chen.demo" />
+      <recent name="com.chen.myssm.myspringmvc" />
       <recent name="com.chen.myssm.basedao" />
       <recent name="com.chen.pojo" />
     </key>
@@ -246,7 +244,8 @@
       <workItem from="1695947884384" duration="20224000" />
       <workItem from="1696045818262" duration="5452000" />
       <workItem from="1696051342274" duration="17615000" />
-      <workItem from="1696144152838" duration="15378000" />
+      <workItem from="1696144152838" duration="20260000" />
+      <workItem from="1696216356419" duration="16150000" />
     </task>
     <task id="LOCAL-00001" summary="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向">
       <created>1695636081174</created>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696092121785</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.使用MVC框架&#10;2.IOC控制反转/DI依赖注入">
+      <created>1696171284636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696171284636</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +286,7 @@
     <MESSAGE value="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向" />
     <MESSAGE value="更新:水果库存管理系统" />
     <MESSAGE value="MVC-Servlet优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC-Servlet优化" />
+    <MESSAGE value="1.使用MVC框架&#10;2.IOC控制反转/DI依赖注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.使用MVC框架&#10;2.IOC控制反转/DI依赖注入" />
   </component>
 </project>
