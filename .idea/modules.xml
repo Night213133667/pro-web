@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/pro-web.iml" filepath="$PROJECT_DIR$/pro-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-fruit-mvc/web-fruit-mvc.iml" filepath="$PROJECT_DIR$/web-fruit-mvc/web-fruit-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-fruit-thymeleaf/web-fruit-thymeleaf.iml" filepath="$PROJECT_DIR$/web-fruit-thymeleaf/web-fruit-thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-qqzone/web-qqzone.iml" filepath="$PROJECT_DIR$/web-qqzone/web-qqzone.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-servlet_api/web-servlet_api.iml" filepath="$PROJECT_DIR$/web-servlet_api/web-servlet_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-start/web-start.iml" filepath="$PROJECT_DIR$/web-start/web-start.iml" />
     </modules>

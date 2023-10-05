@@ -2,38 +2,83 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web-servlet_api:war exploded" />
+      <artifact name="web-qqzone:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="102f4ebb-1565-4d9a-8d2d-c0fd20009a85" name="Changes" comment="1.使用MVC框架&#10;2.IOC控制反转/DI依赖注入">
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/Demo02Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/Demo03Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/Demo04Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Demo01Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Filter01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Filter02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/demo/demoFilter/Filter03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/basedao/DAOException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/filters/CharacterEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/filters/OpenSessionInViewFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/listener/ContextLoaderListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/DispatcherServletException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/trans/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/util/ConnUtil.java" afterDir="false" />
+    <list default="true" id="102f4ebb-1565-4d9a-8d2d-c0fd20009a85" name="Changes" comment="更新MVC:&#10;1.编写filter过滤器，设置字符集编码和开启事务管理&#10;2.编写listener监听器，获取上下文参数创建IOC容器，实现解耦，即控制反转和依赖注入">
+      <change afterPath="$PROJECT_DIR$/lib/druid-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/basedao/BaseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/basedao/DAOException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/filters/CharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/filters/OpenSessionInViewFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/ioc/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/ioc/ClassPathXmlApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/listener/ContextLoaderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/DispatcherServletException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/ViewBaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/trans/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/util/ConnUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/controller/ReplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/controller/TopicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/HostReplyDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/ReplyDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/TopicDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/UserBasicDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/HostReplyDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/ReplyDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/TopicDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/UserBasicDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/HostReply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/Reply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/UserBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/UserDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/HostReplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/ReplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/TopicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/UserBasicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/HostReplyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/ReplyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/TopicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/UserBasicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web-qqzone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/bottom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/left.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/top.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/bottom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/left.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/top.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/del.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/dy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/mrf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/qf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/wyy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/zl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-qqzone/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_servlet_api_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_qqzone_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/dao/impl/FruitDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/service/impl/FruitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/fruit/service/impl/FruitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/basedao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/basedao/BaseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/io/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/ioc/BeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/io/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/ioc/ClassPathXmlApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/src/com/chen/myssm/myspringmvc/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet_api/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet_api/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,37 +114,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8.0_271&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Code/JAVA/pro-web/web-servlet_api/web&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.16320474&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2591716&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8.0_271",
+    "last_opened_file_path": "D:/Code/JAVA/pro-web/out/production/web-qqzone/com/chen/myssm/util/StringUtil.class",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.16320474",
+    "project.structure.side.proportion": "0.2591716",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\JAVA\pro-web\web-servlet_api\web" />
-      <recent name="D:\Code\JAVA\pro-web\web-servlet_api\src" />
-      <recent name="D:\Code\JAVA\pro-web\web-servlet_api\src\com\chen" />
-      <recent name="D:\Code\JAVA\pro-web\web-servlet_api\src\com\chen\fruit" />
-      <recent name="D:\Code\JAVA\pro-web" />
+      <recent name="D:\Code\JAVA\pro-web\lib" />
+      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\service\impl" />
+      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\service" />
+      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\dao\impl" />
+      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.chen.filters" />
@@ -127,13 +172,13 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.0.42" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.42" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/fruit.do" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/page.do?operation=page&amp;page=login" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="web-servlet_api:war exploded">
+        <artifact name="web-qqzone:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -213,7 +258,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web-servlet_api:war exploded" />
+          <artifact name="web-qqzone:war exploded" />
         </option>
       </method>
     </configuration>
@@ -245,7 +290,12 @@
       <workItem from="1696045818262" duration="5452000" />
       <workItem from="1696051342274" duration="17615000" />
       <workItem from="1696144152838" duration="20260000" />
-      <workItem from="1696216356419" duration="16150000" />
+      <workItem from="1696216356419" duration="25102000" />
+      <workItem from="1696310318346" duration="24762000" />
+      <workItem from="1696396114403" duration="12615000" />
+      <workItem from="1696481290137" duration="1757000" />
+      <workItem from="1696503301798" duration="4122000" />
+      <workItem from="1696526197139" duration="5557000" />
     </task>
     <task id="LOCAL-00001" summary="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向">
       <created>1695636081174</created>
@@ -275,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696171284636</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="更新MVC:&#10;1.编写filter过滤器，设置字符集编码和开启事务管理&#10;2.编写listener监听器，获取上下文参数创建IOC容器，实现解耦，即控制反转和依赖注入">
+      <created>1696243784570</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696243784570</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +344,14 @@
     <MESSAGE value="更新:水果库存管理系统" />
     <MESSAGE value="MVC-Servlet优化" />
     <MESSAGE value="1.使用MVC框架&#10;2.IOC控制反转/DI依赖注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.使用MVC框架&#10;2.IOC控制反转/DI依赖注入" />
+    <MESSAGE value="更新MVC:&#10;1.编写filter过滤器，设置字符集编码和开启事务管理&#10;2.编写listener监听器，获取上下文参数创建IOC容器，实现解耦，即控制反转和依赖注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新MVC:&#10;1.编写filter过滤器，设置字符集编码和开启事务管理&#10;2.编写listener监听器，获取上下文参数创建IOC容器，实现解耦，即控制反转和依赖注入" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="userBasic" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
