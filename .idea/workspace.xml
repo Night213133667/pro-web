@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web-qqzone:war exploded" />
+      <artifact name="web-book-registe-cart:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,75 +10,249 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="102f4ebb-1565-4d9a-8d2d-c0fd20009a85" name="Changes" comment="更新MVC:&#10;1.编写filter过滤器，设置字符集编码和开启事务管理&#10;2.编写listener监听器，获取上下文参数创建IOC容器，实现解耦，即控制反转和依赖注入">
-      <change afterPath="$PROJECT_DIR$/lib/druid-1.1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/basedao/BaseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/basedao/DAOException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/filters/CharacterEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/filters/OpenSessionInViewFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/ioc/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/ioc/ClassPathXmlApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/listener/ContextLoaderListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/DispatcherServletException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/myspringmvc/ViewBaseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/trans/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/util/ConnUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/util/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/controller/ReplyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/controller/TopicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/HostReplyDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/ReplyDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/TopicDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/UserBasicDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/HostReplyDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/ReplyDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/TopicDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/dao/impl/UserBasicDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/HostReply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/Reply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/UserBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/pojo/UserDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/HostReplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/ReplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/TopicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/UserBasicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/HostReplyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/ReplyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/TopicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/qqzone/service/impl/UserBasicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/src/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web-qqzone.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/bottom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/left.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/css/top.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/bottom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/left.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/frames/top.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/del.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/dy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/mrf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/qf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/wyy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/imgs/zl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-qqzone/web/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_servlet_api_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_qqzone_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_book_registe_cart_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib_kaptcha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib_myssm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_kaptcha/kaptcha-2.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/CartItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/OrderItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/impl/BookDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/impl/CartItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/impl/OrderDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/impl/OrderItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/pojo/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/pojo/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/pojo/OrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/pojo/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/CartItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/impl/CartItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/book/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/basedao/BaseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/basedao/ConnUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/basedao/DAOException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/filters/CharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/filters/OpenSessionInViewFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/ioc/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/ioc/ClassPathXmlApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/listeners/ContextLoaderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/myspringmvc/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/myspringmvc/DispatcherServletException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/myspringmvc/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/myspringmvc/ViewBaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/trans/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/myssm/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/com/atguigu/z_book/filters/SessionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web-book-registe-cart.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/cart/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/cart/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/manager/book_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/manager/book_manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/manager/manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/manager/order_manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/order/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/user/login_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/user/regist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/pages/user/regist_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/reg/demo01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/bookManger.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/book_edit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/minireset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/orderManger.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/QR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/bottom1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/bottom2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/code.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/img/pwd-icons-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/script/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/script/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/script/jquery-1.7.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/script/regist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/script/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/Javabianchengsixiang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/ailuntulingzhuan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/bainiangudu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/banner6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/biancheng.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/books.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/cate4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/cate5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/cate6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/congwanqingdaominguo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/cyuyanrumenjingdian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/dashujuyuce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/fusang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/geihaizideshi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/huozhe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/huranqiri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/jiaofu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/jieyouzahuodian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/kanjian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/pinang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/pingfandeshijie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/qiadaohaochudexingfu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/renyueshenhua.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/santi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/shejimoshizhichan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/shengmingbuxi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/shuxuezhimei.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/sudongpozhuan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/tujiejiqixuexi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/weinushiernian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/womensa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/wukongzhuan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/xiaowangzi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/yingpaijianshen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book-registe-cart/web/static/uploads/zhongguozhexueshi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/CartItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/OrderItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/impl/BookDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/impl/CartItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/impl/OrderDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/impl/OrderItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/pojo/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/pojo/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/pojo/OrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/pojo/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/CartItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/impl/CartItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/book/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/com/chen/z_book/filters/SessionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web-book.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/cart/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/cart/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/manager/book_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/manager/book_manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/manager/manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/manager/order_manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/order/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/user/login_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/user/regist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/pages/user/regist_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/bookManger.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/book_edit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/minireset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/orderManger.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/QR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/bottom1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/bottom2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/code.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/img/pwd-icons-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/script/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/script/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/script/jquery-1.7.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/script/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/Javabianchengsixiang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/ailuntulingzhuan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/bainiangudu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/banner5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/banner6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/biancheng.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/books.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/cate4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/cate5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/cate6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/congwanqingdaominguo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/cyuyanrumenjingdian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/dashujuyuce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/fusang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/geihaizideshi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/huozhe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/huranqiri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/jiaofu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/jieyouzahuodian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/kanjian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/pinang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/pingfandeshijie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/qiadaohaochudexingfu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/renyueshenhua.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/santi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/shejimoshizhichan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/shengmingbuxi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/shuxuezhimei.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/sudongpozhuan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/tujiejiqixuexi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/weinushiernian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/womensa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/wukongzhuan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/xiaowangzi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/yingpaijianshen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-book/web/static/uploads/zhongguozhexueshi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-cookie-kaptcha-js/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-cookie-kaptcha-js/src/com/chen/cookies/servlet/CookieServlet01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-cookie-kaptcha-js/src/com/chen/cookies/servlet/KaptchaServletDemo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-cookie-kaptcha-js/web-cookie-kaptcha-js.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-cookie-kaptcha-js/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-cookie-kaptcha-js/web/hello01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-cookie-kaptcha-js/web/hello02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_qqzone_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pro-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/basedao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/basedao/BaseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/listener/ContextLoaderListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-qqzone/src/com/chen/myssm/listeners/ContextLoaderListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +264,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -114,37 +290,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8.0_271",
-    "last_opened_file_path": "D:/Code/JAVA/pro-web/out/production/web-qqzone/com/chen/myssm/util/StringUtil.class",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.16320474",
-    "project.structure.side.proportion": "0.2591716",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8.0_271&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Code/JAVA/pro-web/web-cookie-kaptcha-js/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/JAVA/pro-web/web-book-registe-cart/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16320474&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2591716&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\JAVA\pro-web\lib" />
-      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\service\impl" />
-      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\service" />
-      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\dao\impl" />
-      <recent name="D:\Code\JAVA\pro-web\web-qqzone\src\com\chen\qqzone\dao" />
+      <recent name="D:\Code\JAVA\pro-web\web-book-registe-cart\src" />
+      <recent name="D:\Code\JAVA\pro-web\lib_myssm" />
+      <recent name="D:\Code\JAVA\pro-web\web-book-registe-cart\web" />
+      <recent name="D:\Code\JAVA\pro-web\lib_kaptcha" />
+      <recent name="D:\Code\JAVA\pro-web\web-book\src\com\chen\z_book" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\JAVA\pro-web\lib_myssm" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.chen.filters" />
@@ -172,13 +353,13 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.0.42" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.42" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/page.do?operation=page&amp;page=login" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/page.do?operation=page&amp;page=user/regist" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="web-qqzone:war exploded">
+        <artifact name="web-book-registe-cart:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -258,7 +439,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web-qqzone:war exploded" />
+          <artifact name="web-book-registe-cart:war exploded" />
         </option>
       </method>
     </configuration>
@@ -296,6 +477,10 @@
       <workItem from="1696481290137" duration="1757000" />
       <workItem from="1696503301798" duration="4122000" />
       <workItem from="1696526197139" duration="5557000" />
+      <workItem from="1696735737352" duration="22221000" />
+      <workItem from="1696834166320" duration="2765000" />
+      <workItem from="1696930430728" duration="374000" />
+      <workItem from="1697167886148" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="更新:&#10;1.获取Session会话&#10;2.获取会话时间等操作&#10;3.设置和获取会话保存作用域&#10;4.演示服务器内部转发以及客户端重定向">
       <created>1695636081174</created>
@@ -348,10 +533,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="更新MVC:&#10;1.编写filter过滤器，设置字符集编码和开启事务管理&#10;2.编写listener监听器，获取上下文参数创建IOC容器，实现解耦，即控制反转和依赖注入" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="userBasic" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib_myssm/myssm0.1.jar!/com/atguigu/myssm/filters/CharacterEncodingFilter.class</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/lib_myssm/myssm0.1.jar!/com/atguigu/myssm/filters/OpenSessionInViewFilter.class</url>
+          <line>28</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.catalina.core.ApplicationFilterChain" memberName="servlet" />
+        <PinnedItemInfo parentTag="org.apache.catalina.core.ApplicationFilterChain" memberName="n" />
+        <PinnedItemInfo parentTag="org.apache.catalina.core.ApplicationFilterChain" memberName="filters" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web-book-registe-cart:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_book_registe_cart_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web-book-registe-cart" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="lib_kaptcha" />
+          <element id="library" level="project" name="lib_myssm" />
+          <element id="library" level="project" name="lib_thymeleaf" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="web-book-registe-cart/web/Web" />
+    </root>
+  </artifact>
+</component>

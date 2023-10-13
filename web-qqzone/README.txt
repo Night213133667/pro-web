@@ -42,7 +42,7 @@
  1) URL没修改，用的还是fruitdb
  2）
  3）rsmd.getColumnName() 和 rsmd.getColumnLabel()
- 4）Can not set com.atguigu.qqzone.pojo.UserBasic field com.atguigu.qqzone.pojo.Topic.author to java.lang.Integer
+ 4）Can not set com.chen.qqzone.pojo.UserBasic field com.chen.qqzone.pojo.Topic.author to java.lang.Integer
  5) left.html页面没有样式，同时数据也不展示，原因是：我们是直接去请求的静态页面资源，那么并没有执行super.processTemplate()，也就是thymeleaf没有起作用
     (之前的表单也是这个原因)
     解决方法：
@@ -180,7 +180,7 @@
           - 当某一个业务功能需要使用其他模块的业务功能时，尽量的调用别人的service，而不是深入到其他模块的DAO细节
       6） Controller类的编写规则
           ① 在applicationContext.xml中配置Controller
-          <bean id="user" class="com.atguigu.qqzone.controllers.UserController>
+          <bean id="user" class="com.chen.qqzone.controllers.UserController>
           那么，用户在前端发请求时，对应的servletpath就是   /user.do   , 其中的“user”就是对应此处的bean的id值
           ② 在Controller中设计的方法名需要和operate的值一致
           public String login(String loginId , String pwd , HttpSession session){
